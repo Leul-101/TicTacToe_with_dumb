@@ -18,6 +18,7 @@ submit.addEventListener('click', function(){
 function set_boxs_array(boxs){
     for (let x = 0; x < 9; x++){
         boxs[x] = document.querySelector("#box" + String(x));
+        boxs[x].innerText = ""
     }
 };
 function endgame_check(endgame){
@@ -64,4 +65,12 @@ function game(boxs, gameplay){
 //game
 user_config(playername, submit);
 set_boxs_array(boxs);
-game(boxs, gameplay,);
+game(boxs, gameplay);
+document.getElementById("restart").addEventListener('click', function(){
+    for (let q = 0; q < 9; q++){
+        gameplay[q] = q;
+    }
+    set_boxs_array(boxs);
+    game(boxs, gameplay);
+    document.getElementById('endgame').style.display = 'none';
+})
