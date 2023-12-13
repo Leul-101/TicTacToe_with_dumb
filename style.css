@@ -1,0 +1,71 @@
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#playground{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#bord{
+    background-color: rgb(219, 31, 25);
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    gap: 2px;
+    flex-wrap: wrap;
+    border: 7px solid black;
+    border-radius: 10px;
+}
+.squre{
+    background-color: aliceblue;
+    height: 95px;
+    width: 95px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-size: 3em;
+}
+#selecter-squre:hover{
+    background-color: blue;
+}
+#askname{
+    background-color: aliceblue;
+    height: 15em;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    box-shadow: 0 5px 10px black;
+}
+h1{
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+#endgame{
+    background-color: aliceblue;
+    height: 25em;
+    width: 25em;
+    display: none;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1 solid;
+    border-radius: 2%;
+    box-shadow: 0 5px 10px black;
+}
